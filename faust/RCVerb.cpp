@@ -240,7 +240,7 @@ class mydsp : public dsp {
 		m->declare("author", "Julius O. Smith III, Christopher Arndt, chmaha");
 		m->declare("basics.lib/name", "Faust Basic Element Library");
 		m->declare("basics.lib/version", "0.9");
-		m->declare("compile_options", "-a /tmp/tmpnhcqvxrd.cpp -lang cpp -es 1 -mcd 16 -single -ftz 0");
+		m->declare("compile_options", "-a /tmp/tmpjk5qyjy6.cpp -lang cpp -es 1 -mcd 16 -single -ftz 0");
 		m->declare("copyright", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
 		m->declare("delays.lib/name", "Faust Delay Library");
 		m->declare("delays.lib/version", "0.1");
