@@ -19,7 +19,7 @@ with{
 
     in_group(x) = fdn_group(hgroup("[1] Input", x));
 
-    rdel = in_group(vslider("[1] In Delay [unit:ms] [style:knob] [tooltip: Delay in ms
+    rdel = in_group(vslider("[1] Delay [unit:ms] [style:knob] [tooltip: Delay in ms
         before reverberation begins]",40,20,100,1));
 
     freq_group(x) = fdn_group(hgroup("[2] Decay Times in Bands (see tooltips)", x));
