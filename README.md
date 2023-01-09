@@ -13,11 +13,30 @@ Wet/Dry Mix = Wetter to the left, drier to the right.
 
 Plugin defaults to 40ms delay, 250Hz crossover, 2 seconds, 3Khz damping and 50/50 wet/dry mix. This is ready to use as an insert. As a send (with dedicated reverb bus) simply move the wet/dry slider all the way to the left and adjust the channel fader to taste. 
 
-#### Building
+## Building
 
 ```
 $ git clone --recursive https://github.com/chmaha/RCverb.git
 $ cd RCVerb
 $ make
 ```
+## Author
 
+This software is by *chmaha* (a revision of https://github.com/SpotlightKid/dfzitarev1).
+
+
+## License
+
+This plugin is released under the *GPLv3 License*. Please see the
+[LICENSE](./LICENSE) file for details.
+
+
+## Acknowledgements
+
+The DSP code is generated from the FAUST sources via the [faustpp]
+pre-processor and uses my modified version of the [dm.zita_rev1] demo from the FAUST library, written
+by Julius O. Smith III [^1], which is a re-implementation of [zita-rev1] by Fons
+Adriaensen, writen in C++.
+
+The project is built using the DISTRHO Plugin Framework ([DPF]) and set up
+with the [cookiecutter-dpf-faust] project template.
