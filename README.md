@@ -5,9 +5,9 @@ A reverb suitable for classical music based on zita-rev1
 
 #### Controls
 
-Delay = Delay in ms  
+Initial Delay = Delay in ms  
 LowFreq X = Low frequency Crossover point in Hz  
-RT60 = Decay time in seconds  
+Decay (RT60) = Decay time in seconds  
 HF Damping = High frequency damping in Hz  
 Wet/Dry Mix = Wetter to the left, drier to the right.  
 
