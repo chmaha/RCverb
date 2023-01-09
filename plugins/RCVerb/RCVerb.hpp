@@ -42,9 +42,9 @@ public:
     enum { NumParameters = 5 };
 
     enum Parameter {
-        p_Delay,
+        p_Initial_Delay,
         p_LowFreq_X,
-        p_RT60,
+        p_Decay__RT60_,
         p_HF_Damping,
         p_Wet_Dry_Mix,
         
@@ -70,22 +70,22 @@ public:
     void set_parameter(unsigned index, float value) noexcept;
 
     
-    float get_Delay() const noexcept;
+    float get_Initial_Delay() const noexcept;
     
     float get_LowFreq_X() const noexcept;
     
-    float get_RT60() const noexcept;
+    float get_Decay__RT60_() const noexcept;
     
     float get_HF_Damping() const noexcept;
     
     float get_Wet_Dry_Mix() const noexcept;
     
     
-    void set_Delay(float value) noexcept;
+    void set_Initial_Delay(float value) noexcept;
     
     void set_LowFreq_X(float value) noexcept;
     
-    void set_RT60(float value) noexcept;
+    void set_Decay__RT60_(float value) noexcept;
     
     void set_HF_Damping(float value) noexcept;
     
