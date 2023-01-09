@@ -38,10 +38,10 @@ This plugin is released under the *GPLv3 License*. Please see the
 
 ## Acknowledgements
 
-The DSP code is generated from the FAUST sources via the [faustpp]
-pre-processor and uses my modified version of the [dm.zita_rev1] demo from the FAUST library, written
-by Julius O. Smith III [^1], which is a re-implementation of [zita-rev1] by Fons
+The DSP code is generated from the FAUST sources via the faustpp
+pre-processor and uses my modified version of the dm.zita_rev1 demo from the FAUST library, written
+by Julius O. Smith III, which is a re-implementation of zita-rev1 by Fons
 Adriaensen, writen in C++.
 
-The project is built using the DISTRHO Plugin Framework ([DPF]) and set up
-with the [cookiecutter-dpf-faust] project template.
+The project is built using the DISTRHO Plugin Framework (DPF) and set up
+with the cookiecutter-dpf-faust project template.
