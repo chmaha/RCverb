@@ -1,0 +1,9 @@
+[submodule "dpf"]
+	path = dpf
+	url = git@github.com:DISTRHO/DPF.git
+[submodule "dpf/DPF"]
+	path = dpf/DPF
+	url = git@github.com:DISTRHO/DPF.git
+[submodule "DPF"]
+	path = DPF
+	url = git@github.com:DISTRHO/DPF.git
