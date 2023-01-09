@@ -1,5 +1,5 @@
 # RCVerb
 A reverb suitable for classical music based on zita-rev1
-![image](https://user-images.githubusercontent.com/120390802/211226502-33b8c4e9-43a1-4752-818c-94a9fb886d67.png)
+![image](https://user-images.githubusercontent.com/120390802/211226569-63448dfb-133e-40e3-ab88-88a3da3571da.png)
 
 
