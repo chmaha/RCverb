@@ -19,7 +19,7 @@ with{
 
     in_group(x) = fdn_group(hgroup("[1] Input", x));
 
-    rdel = in_group(vslider("[1] Delay [unit:ms] [style:knob] [tooltip: Delay in ms
+    rdel = in_group(vslider("[1] Initial Delay [unit:ms] [style:knob] [tooltip: Delay in ms
         before reverberation begins]",40,20,100,1));
 
     freq_group(x) = fdn_group(hgroup("[2] Decay Times in Bands (see tooltips)", x));
@@ -29,7 +29,7 @@ with{
 
     t60dc = 1.5*t60m;
 
-    t60m = freq_group(vslider("[3] RT60 [unit:s] [style:knob] [scale:log] [tooltip:
+    t60m = freq_group(vslider("[3] Decay (RT60) [unit:s] [style:knob] [scale:log] [tooltip:
         T60 = time (in seconds) to decay 60dB in middle band]",2, 1, 8, 0.1));
 
     f2 = freq_group(vslider("[4] HF Damping [unit:Hz] [style:knob] [scale:log]

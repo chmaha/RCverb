@@ -240,7 +240,7 @@ class mydsp : public dsp {
 		m->declare("author", "Julius O. Smith III, Christopher Arndt, chmaha");
 		m->declare("basics.lib/name", "Faust Basic Element Library");
 		m->declare("basics.lib/version", "0.9");
-		m->declare("compile_options", "-a /tmp/tmpnhcqvxrd.cpp -lang cpp -es 1 -mcd 16 -single -ftz 0");
+		m->declare("compile_options", "-a /tmp/tmpzh48dz6v.cpp -lang cpp -es 1 -mcd 16 -single -ftz 0");
 		m->declare("copyright", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
 		m->declare("delays.lib/name", "Faust Delay Library");
 		m->declare("delays.lib/version", "0.1");
@@ -575,7 +575,7 @@ class mydsp : public dsp {
 		ui_interface->declare(&fVslider3, "style", "knob");
 		ui_interface->declare(&fVslider3, "tooltip", "Delay in ms         before reverberation begins");
 		ui_interface->declare(&fVslider3, "unit", "ms");
-		ui_interface->addVerticalSlider("Delay", &fVslider3, FAUSTFLOAT(4e+01f), FAUSTFLOAT(2e+01f), FAUSTFLOAT(1e+02f), FAUSTFLOAT(1.0f));
+		ui_interface->addVerticalSlider("Initial Delay", &fVslider3, FAUSTFLOAT(4e+01f), FAUSTFLOAT(2e+01f), FAUSTFLOAT(1e+02f), FAUSTFLOAT(1.0f));
 		ui_interface->closeBox();
 		ui_interface->declare(0, "2", "");
 		ui_interface->openHorizontalBox("Decay Times in Bands (see tooltips)");
@@ -590,7 +590,7 @@ class mydsp : public dsp {
 		ui_interface->declare(&fVslider0, "style", "knob");
 		ui_interface->declare(&fVslider0, "tooltip", "T60 = time (in seconds) to decay 60dB in middle band");
 		ui_interface->declare(&fVslider0, "unit", "s");
-		ui_interface->addVerticalSlider("RT60", &fVslider0, FAUSTFLOAT(2.0f), FAUSTFLOAT(1.0f), FAUSTFLOAT(8.0f), FAUSTFLOAT(0.1f));
+		ui_interface->addVerticalSlider("Decay (RT60)", &fVslider0, FAUSTFLOAT(2.0f), FAUSTFLOAT(1.0f), FAUSTFLOAT(8.0f), FAUSTFLOAT(0.1f));
 		ui_interface->declare(&fVslider1, "4", "");
 		ui_interface->declare(&fVslider1, "scale", "log");
 		ui_interface->declare(&fVslider1, "style", "knob");
@@ -915,13 +915,13 @@ const char *RCVerb::parameter_label(unsigned index) noexcept
     switch (index) {
     
     case 0:
-        return "Delay";
+        return "Initial Delay";
     
     case 1:
         return "LowFreq X";
     
     case 2:
-        return "RT60";
+        return "Decay (RT60)";
     
     case 3:
         return "HF Damping";
@@ -963,13 +963,13 @@ const char *RCVerb::parameter_symbol(unsigned index) noexcept
     switch (index) {
     
     case 0:
-        return "Delay";
+        return "Initial_Delay";
     
     case 1:
         return "LowFreq_X";
     
     case 2:
-        return "RT60";
+        return "Decay__RT60_";
     
     case 3:
         return "HF_Damping";
@@ -1144,7 +1144,7 @@ void RCVerb::set_parameter(unsigned index, float value) noexcept
 }
 
 
-float RCVerb::get_Delay() const noexcept
+float RCVerb::get_Initial_Delay() const noexcept
 {
     mydsp &dsp = static_cast<mydsp &>(*fDsp);
     return dsp.fVslider3;
@@ -1156,7 +1156,7 @@ float RCVerb::get_LowFreq_X() const noexcept
     return dsp.fVslider2;
 }
 
-float RCVerb::get_RT60() const noexcept
+float RCVerb::get_Decay__RT60_() const noexcept
 {
     mydsp &dsp = static_cast<mydsp &>(*fDsp);
     return dsp.fVslider0;
@@ -1175,7 +1175,7 @@ float RCVerb::get_Wet_Dry_Mix() const noexcept
 }
 
 
-void RCVerb::set_Delay(float value) noexcept
+void RCVerb::set_Initial_Delay(float value) noexcept
 {
     mydsp &dsp = static_cast<mydsp &>(*fDsp);
     dsp.fVslider3 = value;
@@ -1187,7 +1187,7 @@ void RCVerb::set_LowFreq_X(float value) noexcept
     dsp.fVslider2 = value;
 }
 
-void RCVerb::set_RT60(float value) noexcept
+void RCVerb::set_Decay__RT60_(float value) noexcept
 {
     mydsp &dsp = static_cast<mydsp &>(*fDsp);
     dsp.fVslider0 = value;
