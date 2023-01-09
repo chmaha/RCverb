@@ -21,9 +21,9 @@ Plugin defaults to 40ms delay, 250Hz crossover, 2 seconds, 3Khz damping and 50/5
 ## Building
 
 ```
-$ git clone --recursive https://github.com/chmaha/RCverb.git
-$ cd RCVerb
-$ make
+git clone --recursive https://github.com/chmaha/RCverb.git
+cd RCVerb
+make
 ```
 ## Author
 
