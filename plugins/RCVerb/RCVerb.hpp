@@ -5,9 +5,9 @@
 //
 // Source: rcverb.dsp
 // Name: RCVerb
-// Author: Julius O. Smith III, Christopher Arndt
+// Author: Julius O. Smith III, Christopher Arndt, chmaha
 // Copyright: Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>
-// License: STK-4.3 license
+// License: GPLv3
 // Version: 0.1.0
 //------------------------------------------------------------------------------
 

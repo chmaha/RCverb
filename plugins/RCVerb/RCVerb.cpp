@@ -7,7 +7,7 @@
 // Name: RCVerb
 // Author: Julius O. Smith III, Christopher Arndt, chmaha
 // Copyright: Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>
-// License: STK-4.3 license
+// License: GPLv3
 // Version: 0.1.0
 //------------------------------------------------------------------------------
 
@@ -240,7 +240,7 @@ class mydsp : public dsp {
 		m->declare("author", "Julius O. Smith III, Christopher Arndt, chmaha");
 		m->declare("basics.lib/name", "Faust Basic Element Library");
 		m->declare("basics.lib/version", "0.9");
-		m->declare("compile_options", "-a /tmp/tmpmvegiv7b.cpp -lang cpp -es 1 -mcd 16 -single -ftz 0");
+		m->declare("compile_options", "-a /tmp/tmpq_aqunw8.cpp -lang cpp -es 1 -mcd 16 -single -ftz 0");
 		m->declare("copyright", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
 		m->declare("delays.lib/name", "Faust Delay Library");
 		m->declare("delays.lib/version", "0.1");
@@ -274,7 +274,7 @@ class mydsp : public dsp {
 		m->declare("filters.lib/tf2:copyright", "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>");
 		m->declare("filters.lib/tf2:license", "MIT-style STK-4.3 license");
 		m->declare("filters.lib/version", "0.3");
-		m->declare("license", "STK-4.3 license");
+		m->declare("license", "GPLv3");
 		m->declare("maths.lib/author", "GRAME");
 		m->declare("maths.lib/copyright", "GRAME");
 		m->declare("maths.lib/license", "LGPL with exception");
