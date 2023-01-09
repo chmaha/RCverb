@@ -1,4 +1,4 @@
-# RCVerb
+# RCVerb ("ReaClassical Verb")
 A reverb suitable for classical music based on zita-rev1
 
 ![image](https://user-images.githubusercontent.com/120390802/211276686-df5f40dc-0b60-4d50-8cc8-b9ae812e2215.png)
