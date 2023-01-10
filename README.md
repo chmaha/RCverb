@@ -18,7 +18,7 @@ Plugin defaults to 40ms delay, 250Hz crossover, 2 seconds, 3Khz damping and 50/5
 [Mozart -- anechoic](https://github.com/chmaha/RCverb/raw/main/Demo%20Audio/Mozart-anechoic.mp3)  
 [Mozart -- Wet](https://github.com/chmaha/RCverb/raw/main/Demo%20Audio/Mozart-wet.mp3)
 
-## Building
+## Building (On Linux or MacOS)
 
 ```
 git clone --recursive https://github.com/chmaha/RCverb.git
@@ -28,6 +28,10 @@ make
 To build a CLAP version:
 ```
 make BUILD_CLAP=true
+```
+On Linux, you can compile Windows-x64 binaries as follows:
+```
+scripts/build-win64.sh
 ```
 
 ## Author
