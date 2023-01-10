@@ -34,7 +34,7 @@ make -C dpf clean > /dev/null
 rm -rf bin-w32
 
 # Build now
-make HAVE_CAIRO=false HAVE_JACK=false BUILD_VST2=true
+make HAVE_CAIRO=false HAVE_JACK=false BUILD_CLAP=true $1
 mv bin bin-w32
 
 set +e

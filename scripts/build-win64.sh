@@ -35,7 +35,7 @@ make -C dpf clean > /dev/null
 rm -rf bin-w64
 
 # Build now
-make HAVE_CAIRO=false HAVE_JACK=false BUILD_CLAP=true
+make HAVE_CAIRO=false HAVE_JACK=false BUILD_CLAP=true $1
 mv bin bin-w64
 
 # Make Zip archive of binaries

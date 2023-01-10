@@ -6,6 +6,7 @@
 *.dll
 *.dylib
 *.so
+*.clap
 *.zip
 
 .kdev_include_paths
@@ -17,14 +18,17 @@ bin/rcverb-ladspa.*
 bin/rcverb-dssi.*
 bin/rcverb-vst.*
 bin/rcverb.vst3
+bin/rcverb.clap
 bin/rcverb.lv2/
 bin-w32/rcverb.exe
 bin-w32/rcverb.lv2
 bin-w32/rcverb.vst3
 bin-w32/rcverb-vst.*
+bin-w32/rcverb.clap
 bin-w64/rcverb.exe
 bin-w64/rcverb.lv2
 bin-w64/rcverb.vst3
 bin-w64/rcverb-vst.*
+bin-w64/rcverb.clap
 build/
 dist/
