@@ -65,10 +65,11 @@ FAUST_IDENTIFIER := $(shell grep 'declare name' $(FAUST_DSP_SOURCE) | cut -f 2 -
 
 BUILD_LV2 ?= true
 BUILD_VST2 ?= false
-BUILD_VST3 ?= true
+BUILD_VST3 ?= false
 BUILD_JACK ?= false
 BUILD_DSSI ?= false
 BUILD_LADSPA ?= false
+BUILD_CLAP ?= true
 
 # --------------------------------------------------------------
 # Files to build
