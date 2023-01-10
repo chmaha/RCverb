@@ -30,6 +30,7 @@
 #define DISTRHO_PLUGIN_BRAND "reaclassical.org"
 #define DISTRHO_PLUGIN_NAME  "RCVerb"
 #define DISTRHO_PLUGIN_URI   "http://reaclassical.org"
+#define DISTRHO_PLUGIN_CLAP_ID "reaclassical.rcverb"
 
 #define DISTRHO_PLUGIN_HAS_UI        0
 #define DISTRHO_UI_USE_NANOVG        0
@@ -38,7 +39,7 @@
 #define DISTRHO_PLUGIN_NUM_INPUTS       2
 #define DISTRHO_PLUGIN_NUM_OUTPUTS      2
 #define DISTRHO_PLUGIN_WANT_TIMEPOS     0
-#define DISTRHO_PLUGIN_WANT_PROGRAMS    1
+#define DISTRHO_PLUGIN_WANT_PROGRAMS    0
 #define DISTRHO_PLUGIN_WANT_MIDI_INPUT  0
 #define DISTRHO_PLUGIN_WANT_MIDI_OUTPUT 0
 

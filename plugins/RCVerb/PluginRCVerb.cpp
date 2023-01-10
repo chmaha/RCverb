@@ -78,11 +78,11 @@ void PluginRCVerb::initParameter(uint32_t index, Parameter& parameter) {
   Set the name of the program @ index.
   This function will be called once, shortly after the plugin is created.
 */
-void PluginRCVerb::initProgramName(uint32_t index, String& programName) {
-    if (index < presetCount) {
-        programName = factoryPresets[index].name;
-    }
-}
+// void PluginRCVerb::initProgramName(uint32_t index, String& programName) {
+//     if (index < presetCount) {
+//         programName = factoryPresets[index].name;
+//     }
+// }
 
 // -----------------------------------------------------------------------
 // Internal data
@@ -118,13 +118,13 @@ void PluginRCVerb::setParameterValue(uint32_t index, float value) {
   The host may call this function from any context,
   including realtime processing.
 */
-void PluginRCVerb::loadProgram(uint32_t index) {
-    if (index < presetCount) {
-        for (int i=0; i < RCVerb::NumParameters; i++) {
-            setParameterValue(i, factoryPresets[index].params[i]);
-        }
-    }
-}
+// void PluginRCVerb::loadProgram(uint32_t index) {
+//     if (index < presetCount) {
+//         for (int i=0; i < RCVerb::NumParameters; i++) {
+//             setParameterValue(i, factoryPresets[index].params[i]);
+//         }
+//     }
+// }
 
 // -----------------------------------------------------------------------
 // Process
