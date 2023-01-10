@@ -29,7 +29,7 @@
 
 #define DISTRHO_PLUGIN_BRAND "reaclassical.org"
 #define DISTRHO_PLUGIN_NAME  "RCVerb"
-#define DISTRHO_PLUGIN_URI   "http://reaclassical.org"
+#define DISTRHO_PLUGIN_URI   "http://reaclassical.org/rcverb"
 #define DISTRHO_PLUGIN_CLAP_ID "reaclassical.rcverb"
 
 #define DISTRHO_PLUGIN_HAS_UI        0
