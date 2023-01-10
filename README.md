@@ -25,7 +25,7 @@ git clone --recursive https://github.com/chmaha/RCverb.git
 cd RCverb
 make
 ```
-To also build a VST3 version:
+To build a VST3 version at the same time:
 ```
 make BUILD_VST3=true
 ```
@@ -35,7 +35,7 @@ On Linux systems, you can cross-compile LV2/CLAP Windows-x64 binaries as follows
 ```
 scripts/build-win64.sh
 ```
-To add a VST3 binary:
+To add a VST3 binary at the same time:
 ```
 scripts/build-win64.sh BUILD_VST3=true
 ```
