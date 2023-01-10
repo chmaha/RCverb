@@ -96,6 +96,10 @@ ifeq ($(BUILD_VST3),true)
 TARGETS += vst3
 endif
 
+ifeq ($(BUILD_CLAP),true)
+TARGETS += clap
+endif
+
 ifeq ($(BUILD_JACK),true)
 ifeq ($(HAVE_JACK),true)
 TARGETS += jack
