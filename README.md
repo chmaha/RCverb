@@ -1,5 +1,5 @@
 # RCVerb ("ReaClassical Verb")
-A reverb suitable for classical music based on zita-rev1. Available as LV2, CLAP, VST3, VST and Ladspa.
+A reverb suitable for classical music based on zita-rev1. Available as LV2 and CLAP by default (with optional VST3, VST and Ladspa).
 
 ![image](https://user-images.githubusercontent.com/120390802/211276686-df5f40dc-0b60-4d50-8cc8-b9ae812e2215.png)
 
@@ -18,20 +18,26 @@ Plugin defaults to 40ms delay, 250Hz crossover, 2 seconds, 3Khz damping and 50/5
 [Mozart -- anechoic](https://github.com/chmaha/RCverb/raw/main/Demo%20Audio/Mozart-anechoic.mp3)  
 [Mozart -- Wet](https://github.com/chmaha/RCverb/raw/main/Demo%20Audio/Mozart-wet.mp3)
 
-## Building (On Linux or MacOS)
+## Building LV2 and CLAP (On Linux or MacOS)
 
 ```
 git clone --recursive https://github.com/chmaha/RCverb.git
 cd RCverb
 make
 ```
-To build a CLAP version:
+To also build a VST3 version:
 ```
-make BUILD_CLAP=true
+make BUILD_VST3=true
 ```
-On Linux, you can compile Windows-x64 binaries as follows:
+likewise, `BUILD_VST2=true` or `BUILD_LADSPA=true`.
+
+On Linux systems, you can cross-compile LV2/CLAP Windows-x64 binaries as follows:
 ```
 scripts/build-win64.sh
+```
+To add a VST3 binary:
+```
+scripts/build-win64.sh BUILD_VST3=true
 ```
 
 ## Author
