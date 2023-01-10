@@ -22,7 +22,7 @@ Plugin defaults to 40ms delay, 250Hz crossover, 2 seconds, 3Khz damping and 50/5
 
 ```
 git clone --recursive https://github.com/chmaha/RCverb.git
-cd RCVerb
+cd RCverb
 make
 ```
 To build a CLAP version:
