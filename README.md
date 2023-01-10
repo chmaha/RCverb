@@ -25,6 +25,11 @@ git clone --recursive https://github.com/chmaha/RCverb.git
 cd RCVerb
 make
 ```
+To build a CLAP version:
+```
+make BUILD_CLAP=true
+```
+
 ## Author
 
 This software is by *chmaha* (a revision of https://github.com/SpotlightKid/dfzitarev1).
