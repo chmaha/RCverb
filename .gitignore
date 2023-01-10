@@ -30,5 +30,6 @@ bin-w64/rcverb.lv2
 bin-w64/rcverb.vst3
 bin-w64/rcverb-vst.*
 bin-w64/rcverb.clap
+
 build/
 dist/
